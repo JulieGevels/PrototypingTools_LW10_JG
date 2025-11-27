@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML & CSS — Tailwind versie</title>
+
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Background dots CSS (mag blijven) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- BODY met Roboto -->
+<body class="bg-[#E5D6C5] text-[#2B2B2B] font-[Roboto] overflow-x-hidden">
+
+    <!-- Background dots -->
+    <div class="background-dots">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Vertical menu -->
+    <div class="max-w-[70vw] mt-10 mx-auto">
+        <ul class="flex flex-col gap-4 text-4xl font-bold uppercase font-[Roboto]">
+            <li><a href="Week 1 & 2.html" class="hover:underline">Les 1 & 2</a></li>
+            <li><a href="Week 3.html" class="hover:underline">Les 3</a></li>
+            <li><a href="Week 4.html" class="hover:underline">Les 4</a></li>
+            <li><a href="Week 5.html" class="hover:underline">Les 5</a></li>
+            <li><a href="Week 6.html" class="hover:underline">Les 6</a></li>
+            <li><a href="Week 7 & 8.html" class="hover:underline">Les 7</a></li>
+            <li><a href="Week 9.html" class="hover:underline">Les 8</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="border-b-2 border-[#c65858] p-8 flex justify-end">
+        <h1 class="text-2xl font-semibold text-[#9c4141] font-[Roboto]">Logboek van Julie Gevels</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main class="px-[10%] max-w-[900px] mx-auto py-16">
+
+        <!-- Bruine log intro box -->
+        <div class="border-l-4 border-[#592e2e] p-6 bg-[#CBAF96] shadow-xl transition hover:-translate-x-1 font-[Roboto] mb-12">
+            Hier vind u mijn projectdocumentatie terug.
+        </div>
+
+        <!-- Log entry -->
+        <div class="border-l-4 border-[#592e2e] p-6 bg-[#CBAF96] shadow-lg hover:-translate-x-1 transition mb-12 font-[Roboto]">
+            <p class="text-base">
+              De eerste en tweede les heb ik gewerkt aan mijn low-fi prototypes. In de derde les heb ik mijn low-fi prototypes herbekeken en aangepast aan de hand van de feedback en heb ik mijn mid-fi prototypes gemaakt. Vanaf les 4 zijn we begonnen met de HTML files en CSS. In les 4 heb ik een HTML en CSS van mijn ingangschermen gemaakt via ChatGPT. Les 5 heb ik dit programma gebouwd. In les 6 heb ik verder gewerkt aan Netlify, visual code en Github. In les 7 was het vakantie en in les 8 heb ik verder gewerkt in Figma. Ik heb mijn treinschermen omgezet in scherm voor de telefoon.
+            </p>
+        </div>
+
+        <!-- Contact formulier -->
+        <section>
+            <h1 class="font-[Roboto] text-xl font-bold mt-10 text-[#9c4141]">Neem contact op</h1>
+            <p class="mt-2 text-lg">Heeft u vragen? Laat gerust iets weten!</p>
+
+            <form class="flex flex-col gap-4 mt-6">
+
+                <label class="font-bold">First name</label>
+                <input type="text" class="p-3 border border-gray-400 rounded">
+
+                <label class="font-bold">Last name</label>
+                <input type="text" class="p-3 border border-gray-400 rounded">
+
+                <label class="font-bold">Email</label>
+                <input type="email" class="p-3 border border-gray-400 rounded">
+
+                <label class="font-bold">Phone number</label>
+                <input type="text" class="p-3 border border-gray-400 rounded" placeholder="123-456-7890">
+
+                <label class="font-bold">Message</label>
+                <textarea rows="4" class="p-3 border border-gray-400 rounded"></textarea>
+
+                <label class="flex items-center gap-2">
+                    <input type="checkbox"> I agree to the privacy policy
+                </label>
+
+                <button class="bg-[#9c4141] text-white px-6 py-3 rounded hover:bg-[#592e2e] transition">
+                    Verzenden
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

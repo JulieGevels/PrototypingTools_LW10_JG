@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figma schermen - Les 8</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @keyframes floatDots {
+    0% { transform: translateY(0px) scale(1); opacity: 0.6; }
+    50% { transform: translateY(-25px) scale(1.1); opacity: 0.9; }
+    100% { transform: translateY(0px) scale(1); opacity: 0.6; }
+  }
+  .animate-floatDots { animation: floatDots 18s ease-in-out infinite; }
+</style>
+</head>
+<body class="bg-[#E5D6C5] text-[#2B2B2B] font-sans overflow-x-hidden">
+
+  <!-- Achtergrond bolletjes -->
+  <div class="fixed inset-0 -z-10 overflow-hidden">
+    <span class="absolute w-[140px] h-[140px] rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(250,72,75,0.35),rgba(250,72,75,0.35))] filter blur-sm top-[10%] left-[15%] animate-floatDots"></span>
+    <span class="absolute w-[180px] h-[180px] rounded-full bg-[radial-gradient(circle_at_40%_40%,rgba(228,160,183,0.3),rgba(188,204,238,0.05))] filter blur-sm top-[50%] left-[70%] animate-floatDots" style="animation-delay:3s"></span>
+    <span class="absolute w-[100px] h-[100px] rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(250,72,75,0.35),rgba(250,72,75,0.35))] filter blur-sm top-[75%] left-[25%] animate-floatDots" style="animation-delay:6s"></span>
+    <span class="absolute w-[120px] h-[120px] rounded-full bg-[radial-gradient(circle_at_40%_40%,rgba(228,160,183,0.25),rgba(188,204,238,0.05))] filter blur-sm top-[30%] left-[80%] animate-floatDots" style="animation-delay:9s"></span>
+    <span class="absolute w-[160px] h-[160px] rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(250,72,75,0.35),rgba(250,72,75,0.35))] filter blur-sm top-[85%] left-[50%] animate-floatDots" style="animation-delay:12s"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="border-b-2 border-[#c65858] flex justify-end items-center p-8">
+    <h1 class="font-semibold text-2xl text-[#2B2B2B]">Figma schermen</h1>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-8">
+    
+    <!-- Terug-knop -->
+    <a href="index.html" class="fixed bottom-5 left-0 text-[#e2b48c] bg-gray-100 p-3 rounded-md shadow-md text-lg hover:bg-gray-200 transition">⬅ Terug naar homepage</a>
+
+    <!-- Log-entry -->
+    <div class="border-l-4 border-[#592e2e] bg-[#CBAF96] p-6 shadow-lg transition-transform hover:-translate-x-1 space-y-4">
+      <div class="text-sm font-medium text-[#592e2e] uppercase tracking-wider">les 8</div>
+      <div class="text-xl font-semibold">In deze fase van het proces heb ik aan mijn Visual Code verder gewerkt door mijn CSS om te zetten naar Tailwind en heb ik verder gewerkt aan mijn Figma schermen.</div>
+      <div class="text-base text-[#2B2B2B]">
+        Ik heb de drie kernschermen (vertrekbord, perronscherm, wagonindelingsscherm) omgezet in een interactief prototype. Daarnaast heb ik de informatie van de publieke schermen vertaald naar een persoonlijk mobiel scherm. Dit resulteerde in compactere en toegankelijkere interface voor de individuele reiziger. Door enkel de noodzakelijke informatie te tonen, ontstaat er een gebruiksvriendelijke en informatieve borden.
+      </div>
+      <div class="space-y-2">
+        <div class="font-semibold">UX/UI-vragen:</div>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Welke informatie is cruciaal voor de mobiele versie en welke informatie kan ik weglaten zodat de schermen niet overweldigend worden?</li>
+          <li>Hoe kan ik de overgang tussen de 3 schermen zo vloeiend maken zodat de gebruikers de structuur begrijpen?</li>
+        </ul>
+      </div>
+
+      <!-- Afbeeldingen grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="Images/8.1.1.png" alt="Scherm 8.1.1" class="w-full border-2 border-[#432616] rounded-lg p-1 bg-white shadow-md">
+        <img src="Images/8.1.2.png" alt="Scherm 8.1.2" class="w-full border-2 border-[#432616] rounded-lg p-1 bg-white shadow-md">
+        <img src="Images/8.1.3.png" alt="Scherm 8.1.3" class="w-full border-2 border-[#432616] rounded-lg p-1 bg-white shadow-md">
+        <img src="Images/8.2.png" alt="Scherm 8.2" class="w-full border-2 border-[#432616] rounded-lg p-1 bg-white shadow-md">
+        <img src="Images/8.3.1.png" alt="Scherm 8.3.1" class="w-full border-2 border-[#432616] rounded-lg p-1 bg-white shadow-md">
+        <img src="Images/8.3.2.png" alt="Scherm 8.3.2" class="w-full border-2 border-[#432616] rounded-lg p-1 bg-white shadow-md">
+      </div>
+
+    </div>
+
+  </main>
+</body>
+</html>
